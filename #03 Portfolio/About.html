@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+           *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+           }
+           body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #31363F;
+           }
+           .about-main{
+            height: 610px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+        .about-main .profile{
+            flex-direction: row;
+            width: 600px;
+        }
+        .about-main .profile .img img{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 90px;
+            top: 125px;
+            border-radius: 100%;
+            border: 2px solid whitesmoke;
+        }
+        
+        .about-main .profile .name{
+            position: relative;
+            left: 225px;
+            font-size: 15px;
+            font-weight: 25;
+            color: rgb(214, 214, 214);
+            font-family: 'Poppins', sans-serif;;
+        }
+
+        .about-main .profile .name p{
+            padding: 5px;
+        }
+        .skills{
+            list-style: none;
+            width: 400px;
+            margin: 30px auto;
+            color: white;
+            padding: 10px;
+            /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+        }
+        
+        .skills li{
+            margin: 15px;
+            padding: 15px;
+        }
+        
+        .bar{
+            background: #353b48;
+            display: block;
+            height: 10px;
+            border: 1 px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+        .bar span{
+            height: 20px;
+            float: left;
+            background-color: orange;
+        }
+        
+        .html{
+            width: 90%;
+            animation: html 3s;
+        }
+        .css{
+            width: 80%;
+            animation: css 3s;
+        }
+        .js{
+            width: 40%;
+            animation: js 3s;
+        }
+        
+        @keyframes html{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        
+        @keyframes css{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 80%;
+            }
+        }
+        
+        @keyframes js{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 40%;
+            }
+        }
+        .skills h4{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .about-main .profile-detail{
+            width: 500px;
+        }
+        
+        .about-main .profile-detail h1{
+            color: white;
+            position: relative;
+            font-size: 50px;
+            top: 103px;
+            left: 52px;
+        }
+        
+        .about-main .profile-detail p{
+            position: relative;
+            top: 145px;
+            left: 50px;
+            color: rgb(237, 234, 234);
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 10;
+        }
+        
+        .profile-detail h4{
+            padding: 8px;
+        
+        }
+        .profile-detail h4 span{
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            position: relative;
+            top: 166px;
+            left: 50px;
+            
+        }
+        
+        .profile-detail .format{
+            position: relative;
+            bottom: 144px;
+            left: 151px;
+        
+        }
+        .profile-detail .format p{
+            padding: 9px;
+            
+        }
+        
+     </style>
+</head>
+<body>
+     <div class="about-main">
+          <div class="profile">
+              <div class="img">
+                  <img src="img/men.png" alt="img">
+              </div>
+              <div class="name">
+                  <p>Name: Hemchand</p>
+                  <p>Mobile:- 7068202664</p>
+                  <p>E-mail:- prajapatihemchand3@gmail.com</p>
+                  <p>Address:- Birhana Road,Kanpur 208001</p>
+              </div>
+              <div class="skills">
+                <h4>My Skills</h4>
+                <li><h6>HTML   90%</h6>
+                    <span class="bar"><span class="html"></span></span>
+                </li>
+                <li><h6>CSS   80%</h6>
+                    <span class="bar"><span class="css"></span></span>
+                </li>
+                <li><h6>JAVASCRIPT   40%</h6>
+                    <span class="bar"><span class="js"></span></span>
+                </li>
+
+            </div>    
+              
+          </div>
+          <div class="profile-detail">
+            <h1>About Me</h1>
+            <p>As a 2nd year engineering student of Computer Science, I had to learned a lot about the tech and many programming language. a passionate web developer with a keen eye for detail and a love for creating innovative solutions. I have honed my skills in web design
+            and am always excited to tackle new challenges. <br>
+            My goal is to create experiences that are not only visually appealing but also user-friendly and effective. I’m committed to continuous learning and staying updated with the latest trends and technologies in my field.</p>
+            <h4><span>Education: </span></h4>
+            <h4><span>Language: </span></h4>
+            <h4><span>Other Skills:</span></h4>
+            <h4><span>Interest: </span></h4>
+            <div class="format">
+                <p>Bachelor of Engineering</p>
+                <p>Hindi English</p>
+                <p>C, Python, Java</p>
+                <p>travelling, Lestening Music</p>
+            </div>
+          </div>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="document.body.style.opacity='1'">
+    <div class="hero">
+      <div class="nav">
+        <div class="logo">
+          <h2>Hemchand</h2>
+        </div>
+        <div class="link">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="Message.html">Message me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="img/men1.png" alt="men" class="men" />
+        <div class="main-detil">
+          <p>Hello i'm</p>
+          <h1>Hemchand</h1>
+
+          <span id="typing-animation"></span>
+
+          <script>
+            // Initialize the typing animation
+            const typingAnimationElement =
+              document.getElementById("typing-animation");
+
+            // Create an array of typing text
+            const typingTexts = [
+              "Frontend developer ",
+              "Software Engineer  ",
+              "Student ",
+            ];
+
+            // Create a function to display the typing animation for a given text
+            function playTypingAnimation(text) {
+              // Loop through each character and add it to the element
+              for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                  typingAnimationElement.textContent += text[i];
+                }, i * 200); // Increase the delay to slow down the typing animation
+              }
+
+              // Once the animation is complete, reset the text and start over
+              setTimeout(() => {
+                typingAnimationElement.textContent = "";
+                playTypingAnimation(
+                  typingTexts[
+                    (typingTexts.indexOf(text) + 1) % typingTexts.length
+                  ]
+                );
+              }, text.length * 200);
+            }
+
+            // Start the typing animation loop
+            playTypingAnimation(typingTexts[0]);
+          </script>
+
+          <!-- <h4>Frontend Devaloper</h4> -->
+          <p class="bio">I'm a 2nd year Engineer Student.</p>
+          <p class="bio1">
+            Currently Pursuing My B-tech in Computer Science Engineering(AI &
+            ML)
+          </p>
+          <p class="bio2">I Have Quite knowledge in Frontend Development</p>
+
+          <div class="btn">
+            <button type="submit">Download CV</button>
+            <button type="submit" class="btn-2">Hire Me</button>
+          </div>
+
+          <div class="social">
+            <a href=""><i class="bx bxl-github"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About section Start -->
+
+      <div class="about-main">
+        <div class="profile">
+          <div class="img">
+            <img src="img/men.png" alt="img" />
+          </div>
+          <div class="name">
+            <p>Name: Hemchand</p>
+            <p>Mobile:- 7068202664</p>
+            <p>E-mail:- prajapatihemchand3@gmail.com</p>
+            <p>Address:- Birhana Road,Kanpur 208001</p>
+          </div>
+          <div class="skills">
+            <h4>My Skills</h4>
+            <li>
+              <h6>HTML 90%</h6>
+              <span class="bar"><span class="html"></span></span>
+            </li>
+            <li>
+              <h6>CSS 80%</h6>
+              <span class="bar"><span class="css"></span></span>
+            </li>
+            <li>
+              <h6>JAVASCRIPT 40%</h6>
+              <span class="bar"><span class="js"></span></span>
+            </li>
+          </div>
+        </div>
+
+        <div class="profile-detail">
+          <h1>About Me</h1>
+          <p>
+            As a 2nd year engineering student of Computer Science, I had to
+            learned a lot about the tech and many programming language. a
+            passionate web developer with a keen eye for detail and a love for
+            creating innovative solutions. I have honed my skills in web design
+            and am always excited to tackle new challenges. <br />
+            My goal is to create experiences that are not only visually
+            appealing but also user-friendly and effective. I’m committed to
+            continuous learning and staying updated with the latest trends and
+            technologies in my field.
+          </p>
+          <h4><span>Education: </span></h4>
+          <h4><span>Language: </span></h4>
+          <h4><span>Other Skills:</span></h4>
+          <h4><span>Interest: </span></h4>
+          <div class="format">
+            <p>Bachelor of Engineering</p>
+            <p>Hindi English</p>
+            <p>C, Python, Java</p>
+            <p>travelling, Lestening Music</p>
+          </div>
+        </div>
+      </div>
+      <!-- About section ended -->
+
+      <!-- Project Section Start-->
+
+      <div class="project-main">
+        <h1>Projects</h1>
+        <p>
+          Below are the some sample of little projects using HTML CSS &
+          JAVASCRIPT
+        </p>
+        <div class="image">
+          <div class="img1">
+            <a href="https://github.com/Hemchand44/Vintage-Vault.git"
+              ><img src="img/ReCommerce.jpg" alt="recommerce"
+            /></a>
+            <a href="https://github.com/Hemchand44/Vintage-Vault.git"
+              ><h4 id="hem">Re-Commerce WEbsite Using HTML & CSS.</h4></a
+            >
+            <h5 id="used">
+              Simple Re-commerce Website made using HTML, CSS. Custumers can
+              easily buy and sell older elctronics product
+            </h5>
+          </div>
+          <div class="img1">
+            <a href="https://github.com/Hemchand44/Profile-card.git"
+              ><img src="img/Profile Card.jpeg" alt="profilr-card"
+            /></a>
+            <a href="https://github.com/Hemchand44/Profile-card.git"
+              ><h4 id="hem">Profile Card Using HTML & CSS</h4></a
+            >
+            <h5 id="used1">
+              Profile Card made using HTML, CSS. Contain the short detail like
+              position, Skills
+            </h5>
+          </div>
+          <div class="img1">
+            <a href="https://github.com/Hemchand44/Lion_game.git"
+              ><img src="img/lion.jpg" alt="Lion-game"
+            /></a>
+            <a href="https://github.com/Hemchand44/Lion_game.git"
+              ><h4 id="hem">Lion Game Using HTML, CSS & JAVASCRIPT</h4></a
+            >
+            <h5 id="used">
+              This Game made using HTML, CSS & javascript. fully functional game
+              help to feel relax and chill
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- project section ended -->
+
+      <!-- message section start -->
+
+      <div class="message-main">
+        <h1>Message me</h1>
+        <div class="icon">
+          <div class="aa">
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+          </div>
+          <div class="aa">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <div class="aa">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <div class="aa">
+            <a href="#"><i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+        <span class="text">
+          <p>Address</p>
+          <p id="contact">Contact Number</p>
+          <p>E-mail Address</p>
+          <p>Download Resume</p>
+
+        </span>
+        <span class="text2">
+          <p id="address">Kanpur, india</p>
+          <p id="contact2">+91 7068202664</p>
+          <p id="mail">prajapatihemchand3@gmail.com</p>
+          <p id="resume"><a href="#">Resume Link</a></p>
+
+        </span>
+        <span class="question-container">
+          <p id="question">Have a Question ?</p>
+          <a id="ques-form" href="#">Click here</a>
+        </span>
+        <div class="social">
+            <p>Find me on</p>
+            <a href="https://www.linkedin.com/in/hemchand-prajapati70/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Hemchand44"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/this.is.hemchand/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

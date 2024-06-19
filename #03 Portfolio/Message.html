@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Message</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          body{
+               font-family: 'Poppins', sans-serif;
+          }
+          .message-main{
+               height: 633px;
+               width: 100%;
+               background-color: #0C0C0C;
+           }
+           
+           .message-main h1{
+               position: relative;
+               top: 85px;
+               color: orange;
+               font-size: 40px;
+               display: flex;
+               text-align: center;
+               justify-content: center;
+           }
+           
+           .message-main .icon{
+               margin-top: 180px;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-around;
+           }
+           
+           .message-main .icon .aa{
+               height: 70px;
+               width: 70px;
+               background-color: white;
+               display: flex;
+               text-align: center;
+               justify-content: center;
+               font-size: 35px;
+               border-radius: 100%;
+           }
+           
+           .message-main .icon .aa a i{
+               margin-top: 18px;
+           }
+           
+           .message-main .text{
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-around;
+           }
+           
+           .message-main .text p{
+               color: white;
+               font-size: 18px;
+               margin-left: 60px;
+               margin-top: 20px;
+           }
+           #contact{
+               margin-left: 105px;
+           }
+           
+           .message-main .text2{
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: space-around;
+           }
+           
+           .message-main .text2 p{
+               color: white;
+               font-size: 12px;
+               font-weight: 12;
+               margin-left: 60px;
+               margin-top: 20px;
+           }
+           
+           #resume a{
+               text-decoration: none;
+               color: white;
+               position: relative;
+               right: 44px;
+               top: 20px;
+           }
+           
+           #address{
+               position: relative;
+               right: 18px;
+               top: 20px;
+           }
+           
+           #contact2{
+               position: relative;
+               top: 20px;
+               left: 20px;
+           }
+           
+           #mail{
+               position: relative;
+               top: 20px;
+               /* left: 20px; */
+           }
+           
+           #question{
+               color: white;
+               display: flex;
+               text-align: center;
+               justify-content: center;
+               position: relative;
+               top: 100px;
+               right: 105px;
+               font-size: 24px;
+           }
+           
+           #ques-form{
+               text-decoration: none;
+               width: 130px;
+               height: 35px;
+               display: flex;
+               text-align: center;
+               justify-content: center;
+               position: relative;
+               top: 62px;
+               left: 690px;
+               padding: 5px;
+               border-radius: 30px 30px 30px 30px;
+               background-color: orange;
+           }
+
+           .message-main .social p{
+            font-weight: 10;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            right: 115px;
+            top: 95px;
+            color: white;
+        }
+        
+        .message-main .social a i{
+            padding: 12px;
+            border-radius: 100%;
+            background-color: black;
+            box-shadow: 1px 1px 5px 1px whitesmoke;
+            color: orange;
+            font-size: 25px;
+           position: relative;
+           top: 60px;
+           left: 611px;
+        }
+     </style>
+</head>
+<body>
+     <div class="message-main">
+          <h1>Message me</h1>
+          <div class="icon">
+            <div class="aa">
+              <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <div class="aa">
+              <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="aa">
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="aa">
+              <a href="#"><i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+          <span class="text">
+            <p>Address</p>
+            <p id="contact">Contact Number</p>
+            <p>E-mail Address</p>
+            <p>Download Resume</p>
+  
+          </span>
+          <span class="text2">
+            <p id="address">Kanpur, india</p>
+            <p id="contact2">+91 7068202664</p>
+            <p id="mail">prajapatihemchand3@gmail.com</p>
+            <p id="resume"><a href="#">Resume Link</a></p>
+  
+          </span>
+          <span class="question-container">
+            <p id="question">Have a Question ?</p>
+            <a id="ques-form" href="#">Click here</a>
+          </span>
+          <div class="social">
+            <p>Find me on</p>
+            <a href="https://www.linkedin.com/in/hemchand-prajapati70/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Hemchand44"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/this.is.hemchand/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        </div>
+</body>
+</html>
